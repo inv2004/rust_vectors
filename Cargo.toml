@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["inv2004 <inv2004@gmail.com>"]
 
 [dependencies]
+rand = "*"
+lazy_static = "*"
