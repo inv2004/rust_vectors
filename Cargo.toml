@@ -1,0 +1,6 @@
+[package]
+name = "rust_vectors"
+version = "0.1.0"
+authors = ["inv2004 <inv2004@gmail.com>"]
+
+[dependencies]
