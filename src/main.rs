@@ -62,15 +62,38 @@ mod tests {
     }
 
     // let: 10m q32: 367ms, rust: 39ms
-    #[bench] // multiple odd numbers with 100
-    fn odd_mul_100_for(b: &mut Bencher) {
+    // #[bench] // multiple odd numbers with 100
+    // fn odd_mul_100_for(b: &mut Bencher) {
+    //     b.iter(|| {
+    //         let mut a = VEC1;
+    //         for i in a.iter_mut() {
+    //             if *i%2 == 0 {
+    //                 *i = *i*100;
+    //             }
+    //         }
+    //         return VEC1;
+    //     });
+    // }
+
+    #[bench]
+    fn mavg_iter(b: &mut Bencher) {
         b.iter(|| {
-            let mut a = VEC1;
-            for i in VEC1. {
-                if i%2 == 0 {
-                    *i = *i*100;
-                }
+            let r:Vec<f64> = VEC1.windows(200).map(|x| x.iter().sum::<i64>() as f64 / x.len() as f64).collect();
+            return r;
+        });
+    }
+
+    #[bench]
+    fn mavg_for(b: &mut Bencher) {
+        b.iter(|| {
+            let mut res = Vec::with_capacity(VEC1.len());
+            let mut acc = 0;
+            for i in 200..(VEC1.len()) {
+                acc += VEC1[i];
+                acc -= VEC1[i-200];
+                res.push(acc);
             }
+            return res;
         });
     }
 
