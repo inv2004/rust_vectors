@@ -93,7 +93,7 @@ fn mavg_test() {
     assert_eq!(vec![1.0, 1.5, 2.0, 3.0, 4.0], q_mavg_iter(3, &test));
 }
 
-// #[bench]
+#[bench]
 fn mavg_windows_bench(b: &mut Bencher) {
     b.iter(|| mavg_windows(*WIN_SIZE, &VEC1) );
 }

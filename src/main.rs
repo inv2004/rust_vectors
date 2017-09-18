@@ -7,8 +7,9 @@ extern crate lazy_static;
 extern crate test;
 extern crate rand;
 
-mod mavg;
-mod deltas;
+// mod mavg;
+// mod deltas;
+mod update;
 
 //     // // let: 10m q32: 367ms , rust: 83ms
 //     // #[bench] // multiple odd numbers with 100
