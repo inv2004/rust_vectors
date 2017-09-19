@@ -22,6 +22,7 @@ _time in ms_
 \* _window-size: 1000_
 
 
+
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - deltas:         6.563
 - find_odd_mul:       37.355
