@@ -7,10 +7,11 @@ extern crate lazy_static;
 extern crate test;
 extern crate rand;
 
-mod mavg;
-mod deltas;
-mod find_replace;
-mod other;
+// mod mavg;
+// mod deltas;
+// mod find_amend;
+mod max;
+mod dev;
 
 //     // // let: 10m q32: 367ms , rust: 83ms
 //     // #[bench] // multiple odd numbers with 100

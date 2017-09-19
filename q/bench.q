@@ -27,4 +27,7 @@ l:10000000?1000
 r:system"t:rep max l"
 -1 "max: ",string r%rep;
 
+r:system"t:rep dev l"
+-1 "dev: ",string r%rep;
+
 \\
