@@ -7,9 +7,9 @@ extern crate lazy_static;
 extern crate test;
 extern crate rand;
 
-// mod mavg;
-// mod deltas;
-// mod find_replace;
+mod mavg;
+mod deltas;
+mod find_replace;
 mod other;
 
 //     // // let: 10m q32: 367ms , rust: 83ms

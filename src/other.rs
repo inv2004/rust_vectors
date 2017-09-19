@@ -20,17 +20,17 @@ fn max_for(v: &Vec<i64>) -> i64 {
 }
 
 #[test]
-fn mdiff_test() {
-    assert_eq!(5, max_iter(&vec![1,2,3,5,4]));
+fn max_test() {
+//    assert_eq!(5, max_iter(&vec![1,2,3,5,4]));
     assert_eq!(5, max_for(&vec![1,2,3,5,4]));
 }
 
 #[bench]
-fn mdiff_iter_bench(b: &mut Bencher) {
+fn max_iter_bench(b: &mut Bencher) {
     b.iter(|| max_iter(&VEC1) );
 }
 
 #[bench]
-fn mdiff_for_bench(b: &mut Bencher) {
+fn max_for_bench(b: &mut Bencher) {
     b.iter(|| max_for(&VEC1) );
 }
