@@ -4,11 +4,10 @@
 - Q (kdb)
 - C (maybe in future)
 
-Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
-8GB DDR4-SDRAM \ 2133 Kingston (MemoryDevices = ?1?)
-
-
 _time in ms_
+
+**Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
+8GB DDR4-SDRAM \ 2133 Kingston (MemoryDevices = ?1?):**
 
 |test           | KDB+ 3.5  | rustc 1.22.0-nightly |
 |---------------|:---------:|:--------------------:|
@@ -22,6 +21,9 @@ _time in ms_
 \* _window-size: 1000_
 
 @TODO: dev, mwavg, med
+
+**AMD**
+@TODO
 
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - deltas:         6.563
