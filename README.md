@@ -18,7 +18,7 @@ _time in ms_
 | mavg*         | 22.889    | 4,406                |
 | q_mavg*       | 32.659    | 6,235                |
 | max           | 12.22     | 7,273                |
-* _window-size: 1000_
+\* _window-size: 1000_
 
 
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
