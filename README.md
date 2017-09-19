@@ -7,6 +7,18 @@
 Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
 8GB  Physical Memory  2133 \ Kingston (MemoryDevices = ?2? )
 
+_time in ms_
+
+|test           | KDB+ 3.5  | rustc 1.22.0-nightly |
+|---------------|:---------:|----------------------|
+| deltas        | 6.563     | 3.633                |
+| find_odd_mul  | 37.355    | 7,422                |
+| amend_odd_mul | 39.888    | 3,535                |
+| mavg          | 22.889    | 4,406                |
+| q_mavg        | 32.659    | 6,235                |
+| max           | 12.22     | 7,273                |
+
+
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - deltas:         6.563
 - find_odd_mul:       37.355
