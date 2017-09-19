@@ -5,7 +5,8 @@
 - C (maybe in future)
 
 Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
-8GB  Physical Memory  2133 \ Kingston (MemoryDevices = ?2? )
+8GB DDR4-SDRAM \ 2133 Kingston (MemoryDevices = ?1?)
+
 
 _time in ms_
 
