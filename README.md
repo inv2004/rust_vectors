@@ -1,19 +1,19 @@
 # rust_vectors
-### Code to compare benchmarks of vector processing by languages
+### Benchmarks to compare different languages on vector processing
 - Rust
 - Q (kdb)
 - C (maybe in future)
 
 Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
-8589934592  Physical Memory  2133 \ Kingston (MemoryDevices = ?2? )
+8GB  Physical Memory  2133 \ Kingston (MemoryDevices = ?2? )
 
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - deltas:         6.563
-- odd_*100:       37.355
-- odd_cmp_*100:   38.879
-- amend*100:      39.888
+- find_odd_mul:       37.355
+- find_odd_cmp_mul:   38.879
+- amend_odd_mul:      39.888
 - mavg (msum):    22.889
-- mavg (999_):    34.284
+- mavg (999_mavg):    34.284
 - q_mavg:         32.659
 - max:            12.22
 
@@ -21,9 +21,9 @@ rustc 1.22.0-nightly:
 - test deltas::deltas_for_bench               ... bench:   4,136,178 ns/iter (+/- 284,732)
 - test deltas::deltas_iter_bench              ... bench:   4,118,904 ns/iter (+/- 254,391)
 - test deltas::deltas_windows_bench           ... bench:   3,633,447 ns/iter (+/- 88,539)
-- test find_replace::mul_odd_bench            ... bench:   7,422,591 ns/iter (+/- 531,274)
-- test find_replace::mul_odd_update_bench     ... bench:   3,535,786 ns/iter (+/- 109,961)
-- test find_replace::mul_odd_update_mut_bench ... bench:  12,275,589 ns/iter (+/- 148,298)
+- test find_replace::find_odd_mul_bench            ... bench:   7,422,591 ns/iter (+/- 531,274)
+- test find_replace::amend_odd_mul_bench     ... bench:   3,535,786 ns/iter (+/- 109,961)
+- test find_replace::amend_odd_mul_mut_bench ... bench:  12,275,589 ns/iter (+/- 148,298)
 - test mavg::mavg_for_bench                   ... bench:   4,406,677 ns/iter (+/- 142,674)
 - test mavg::mavg_iter_bench                  ... bench:   6,192,713 ns/iter (+/- 631,387)
 - test mavg::mavg_windows_bench               ... bench: 115,744,958 ns/iter (+/- 10,532,016)
