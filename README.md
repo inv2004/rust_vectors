@@ -6,7 +6,7 @@
 
 _time in ms_
 
-**Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz:
+**Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 8GB DDR4-SDRAM \ 2133 Kingston (MemoryBanks = 1):**
 
 |test           | KDB+ 3.5  | rustc 1.22.0-nightly |
@@ -18,10 +18,11 @@ _time in ms_
 | q_mavg*       | 32.659    | 6,235                |
 | max           | 12.22     | 7,273                |
 | dev           |           |                      |
+| mwavg         |           |                      |
 
 \* _window-size: 1000_
 
-@TODO: dev, mwavg, med
+@TODO: mwavg, med
 
 **AMD**
 @TODO
