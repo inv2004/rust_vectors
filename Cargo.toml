@@ -6,3 +6,6 @@ authors = ["inv2004 <inv2004@gmail.com>"]
 [dependencies]
 rand = "*"
 lazy_static = "*"
+
+[target.windows]
+rustflags = ["-C target-cpu=native"]

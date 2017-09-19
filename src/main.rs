@@ -9,7 +9,8 @@ extern crate rand;
 
 // mod mavg;
 // mod deltas;
-mod update;
+// mod find_replace;
+mod other;
 
 //     // // let: 10m q32: 367ms , rust: 83ms
 //     // #[bench] // multiple odd numbers with 100

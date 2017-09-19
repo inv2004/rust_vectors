@@ -19,10 +19,21 @@ fn mul_odd_update(v: &Vec<i64>) -> Vec<i64> {
     }).collect();
 }
 
+fn mul_odd_update_mut(v: &Vec<i64>) -> Vec<i64> {
+    let res = &mut v.clone();
+    for x in res.iter_mut() {
+        if 1 == *x%2 {
+            *x *= 100;
+        }
+    }
+    return res.to_vec();
+}
+
 #[test]
 fn mul_odd_test() {
     assert_eq!(vec![100,300,500], mul_odd(&vec![1,2,3,4,5]));
     assert_eq!(vec![100,2,300,4,500], mul_odd_update(&vec![1,2,3,4,5]));
+    assert_eq!(vec![100,2,300,4,500], mul_odd_update_mut(&vec![1,2,3,4,5]));
 }
 
 #[bench]
@@ -33,4 +44,9 @@ fn mul_odd_bench(b: &mut Bencher) {
 #[bench]
 fn mul_odd_update_bench(b: &mut Bencher) {
     b.iter(|| mul_odd_update(&VEC1) );
+}
+
+#[bench]
+fn mul_odd_update_mut_bench(b: &mut Bencher) {
+    b.iter(|| mul_odd_update_mut(&VEC1) );
 }
