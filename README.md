@@ -23,8 +23,20 @@ _time in ms_
 
 \* _window-size: 1000_
 
-**AMD**
-@TODO
+**AMD Athlon(tm) X4 860K Quad Core Processor @ 3.70Ghz
+8GB DDR (1866, Speed=1600) Unknown (MemoryBanks = 2):**
+
+|test           | KDB+ 3.5  | rustc 1.22.0-nightly |
+|---------------|:---------:|:--------------------:|
+| deltas        | 10.879    | 5,880                |
+| dev           | 16.957    | 2,661                |
+| odd_mul_amend | 57.037    | 5,891                |
+| odd_mul       | 54.351    | 8,914                |
+| mavg*         | 33.148    | 8,495                |
+| q_mavg*       | 47.329    | 11,933               |
+| max           | 19.244    | 14,027               |
+| med           | 11.298    | 9,423                |
+| wavg          | 235.165   | 18,883               |
 
 ---
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
