@@ -26,6 +26,7 @@ _time in ms_
 **AMD**
 @TODO
 
+---
 KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - deltas: 6.459
 - dev: 14.245
@@ -39,6 +40,7 @@ KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - med: 7.144
 - wavg: 176.389
 
+---
 rustc 1.22.0-nightly:
 - test deltas::deltas_for_bench            ... bench:   4,066,418 ns/iter (+/- 120,299)
 - test deltas::deltas_iter_bench           ... bench:   4,081,956 ns/iter (+/- 98,582)
