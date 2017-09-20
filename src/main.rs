@@ -7,10 +7,10 @@ extern crate lazy_static;
 extern crate test;
 extern crate rand;
 
-// mod mavg;
-// mod deltas;
-// mod find_amend;
-// mod max;
-// mod dev;
+mod mavg;
+mod deltas;
+mod find_amend;
+mod max;
+mod dev;
 mod wavg;
-
+mod med;

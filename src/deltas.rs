@@ -1,5 +1,3 @@
-//extern crate std;
-
 use rand::{thread_rng, Rng};
 use test::Bencher;
 

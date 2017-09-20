@@ -5,11 +5,11 @@ lazy_static! {
     static ref VEC1: Vec<i64> = { (0..1_000_000).map(|_| thread_rng().gen_range(0,1000)).collect() };
 }
 
-fn mul_odd(v: &Vec<i64>) -> Vec<i64> {
+fn odd_mul(v: &Vec<i64>) -> Vec<i64> {
     return v.iter().filter(|&x| 1 == x % 2).map(|x| x*100).collect();
 }
 
-fn mul_odd_update(v: &Vec<i64>) -> Vec<i64> {
+fn odd_mul_amend(v: &Vec<i64>) -> Vec<i64> {
     return v.iter().map(|&x| {
         if 1 == x%2 {
             x * 100
@@ -19,7 +19,7 @@ fn mul_odd_update(v: &Vec<i64>) -> Vec<i64> {
     }).collect();
 }
 
-fn mul_odd_update_mut(v: &Vec<i64>) -> Vec<i64> {
+fn odd_mul_amend_mut(v: &Vec<i64>) -> Vec<i64> {
     let res = &mut v.clone();
     for x in res.iter_mut() {
         if 1 == *x%2 {
@@ -30,23 +30,23 @@ fn mul_odd_update_mut(v: &Vec<i64>) -> Vec<i64> {
 }
 
 #[test]
-fn mul_odd_test() {
-    assert_eq!(vec![100,300,500], mul_odd(&vec![1,2,3,4,5]));
-    assert_eq!(vec![100,2,300,4,500], mul_odd_update(&vec![1,2,3,4,5]));
-    assert_eq!(vec![100,2,300,4,500], mul_odd_update_mut(&vec![1,2,3,4,5]));
+fn odd_mul_test() {
+    assert_eq!(vec![100,300,500], odd_mul(&vec![1,2,3,4,5]));
+    assert_eq!(vec![100,2,300,4,500], odd_mul_amend(&vec![1,2,3,4,5]));
+    assert_eq!(vec![100,2,300,4,500], odd_mul_amend_mut(&vec![1,2,3,4,5]));
 }
 
 #[bench]
-fn mul_odd_bench(b: &mut Bencher) {
-    b.iter(|| mul_odd(&VEC1) );
+fn odd_mul_bench(b: &mut Bencher) {
+    b.iter(|| odd_mul(&VEC1) );
 }
 
 #[bench]
-fn mul_odd_update_bench(b: &mut Bencher) {
-    b.iter(|| mul_odd_update(&VEC1) );
+fn odd_mul_amend_bench(b: &mut Bencher) {
+    b.iter(|| odd_mul_amend(&VEC1) );
 }
 
 #[bench]
-fn mul_odd_update_mut_bench(b: &mut Bencher) {
-    b.iter(|| mul_odd_update_mut(&VEC1) );
+fn odd_mul_amend_mut_bench(b: &mut Bencher) {
+    b.iter(|| odd_mul_amend_mut(&VEC1) );
 }

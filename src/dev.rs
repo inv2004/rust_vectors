@@ -2,7 +2,7 @@ use rand::{thread_rng, Rng};
 use test::Bencher;
 
 lazy_static! {
-    static ref VEC1: Vec<i64> = { (0..10_000_000).map(|_| thread_rng().gen_range(0,1000)).collect() };
+    static ref VEC1: Vec<i64> = { (0..1_000_000).map(|_| thread_rng().gen_range(0,1000)).collect() };
 }
 
 fn dev_iter(v: &Vec<i64>) -> f64 {
