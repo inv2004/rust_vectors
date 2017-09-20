@@ -18,7 +18,7 @@ _time in ms_
 | q_mavg*       | 32.659    | 6,235                |
 | max           | 12.22     | 7,273                |
 | dev           |           |                      |
-| mwavg         |           |                      |
+| wavg          |           |                      |
 
 \* _window-size: 1000_
 
