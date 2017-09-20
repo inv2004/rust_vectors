@@ -7,7 +7,7 @@
 _time in ms_
 
 **Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
-8GB DDR4-SDRAM \ 2133 Kingston (MemoryBanks = 1):**
+8GB DDR4-SDRAM \ 2133 Kingston (MemoryBanks = 1) \ windows-10 **
 
 |test           | KDB+ 3.5  | rustc 1.22.0-nightly |
 |---------------|:---------:|:--------------------:|
