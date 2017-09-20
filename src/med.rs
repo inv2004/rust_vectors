@@ -4,7 +4,7 @@ use rand::{thread_rng, Rng};
 use test::Bencher;
 
 lazy_static! {
-    static ref VEC1: Vec<i64> = { (0..10_000_001).map(|_| thread_rng().gen_range(0,1000)).collect() };
+    static ref VEC1: Vec<i64> = { (0..1_000_001).map(|_| thread_rng().gen_range(0,1000)).collect() };
 }
 
 fn med_sort(v: &Vec<i64>) -> f64 {
@@ -38,10 +38,10 @@ fn med_test() {
     assert_eq!(3.5, med_lib(&vec![1,2,3,5,4,6]));
 }
 
-#[bench]
-fn med_sort_bench(b: &mut Bencher) {
-    b.iter(|| med_sort(&VEC1) );
-}
+// #[bench]
+// fn med_sort_bench(b: &mut Bencher) {
+//     b.iter(|| med_sort(&VEC1) );
+// }
 
 #[bench]
 fn med_lib_bench(b: &mut Bencher) {

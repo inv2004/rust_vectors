@@ -29,7 +29,7 @@ l:10000000?1000
 r:system"t:rep max l"
 -1 "max: ",string r%rep;
 
-l:10000001?1000
+l:1000001?1000
 r:system"t:rep med l"
 -1 "med: ",string r%rep;
 

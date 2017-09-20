@@ -18,7 +18,7 @@ _time in ms_
 | mavg*         | 22.157    | 4,277                |
 | q_mavg*       | 32.663    | 6,759                |
 | max           | 12.223    | 7,587                |
-| med           | 73.1      | 88,565               |
+| med           | 7.144     | 8,268                |
 | wavg          | 176.389   | 14,137               |
 
 \* _window-size: 1000_
@@ -36,7 +36,7 @@ KDB+ 3.5 2017.09.06 \ w32/ 4()core 4095MB:
 - mavg (999_): 34.261
 - q_mavg: 32.663
 - max: 12.223
-- med: 73.1
+- med: 7.144
 - wavg: 176.389
 
 rustc 1.22.0-nightly:
@@ -56,7 +56,7 @@ rustc 1.22.0-nightly:
 - test mavg::q_mavg_iter_bench             ... bench:   7,293,153 ns/iter (+/- 203,325)
 - test max::max_for_bench                  ... bench:   7,587,591 ns/iter (+/- 98,771)
 - test max::max_iter_bench                 ... bench:  23,592,301 ns/iter (+/- 99,220)
-- test med::med_lib_bench                  ... bench:  88,565,175 ns/iter (+/- 738,685)
+- test med::med_lib_bench                  ... bench:   8,268,464 ns/iter (+/- 738,685)
 - test med::med_sort_bench                 ... bench: 841,599,381 ns/iter (+/- 3,660,163)
 - test wavg::wavg_for_bench                ... bench:  14,137,928 ns/iter (+/- 180,555)
 - test wavg::wavg_iter_bench               ... bench:  20,302,925 ns/iter (+/- 250,498)
