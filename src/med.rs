@@ -10,7 +10,7 @@ lazy_static! {
 fn med_sort(v: &Vec<i64>) -> f64 {
     let len = v.len();
     let mut v_sorted = v.clone();
-    v_sorted.sort();
+    v_sorted.sort_unstable();
     let middle = len / 2;
     if 0 == len % 2 {
         return (v_sorted[middle-1] + v_sorted[middle]) as f64 / 2.0_f64;
@@ -38,10 +38,10 @@ fn med_test() {
     assert_eq!(3.5, med_lib(&vec![1,2,3,5,4,6]));
 }
 
-// #[bench]
-// fn med_sort_bench(b: &mut Bencher) {
-//     b.iter(|| med_sort(&VEC1) );
-// }
+#[bench]
+fn med_sort_bench(b: &mut Bencher) {
+    b.iter(|| med_sort(&VEC1) );
+}
 
 #[bench]
 fn med_lib_bench(b: &mut Bencher) {
