@@ -38,7 +38,7 @@ _time in ms_
 | med           | 11.298    | 9,423                |
 | wavg          | 235.165   | 18,883               |
 
-**Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz @ 8GB DDR (2666, Speed = 2400) BLS
+**Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz @ 8GB DDR (2666, Speed = 2400) BLS**
 
 |test           | KDB+ 3.5  | rustc 1.25.0-nightly |
 |---------------|:---------:|:--------------------:|
