@@ -13,17 +13,13 @@ fn dev_iter(v: &Vec<i64>) -> f64 {
 
 fn dev_for(v: &Vec<i64>) -> f64 {
     let len = v.len() as f64;
-    let mut acc = 0;
+    let mut sum1 = 0;
+    let mut sum2 = 0;
     for x in v {
-        acc += *x;
+        sum1 += x;
+        sum2 += x*x;
     }
-    let avg = acc as f64 / len;
-    let mut acc = 0.0;
-    for x in v {
-        acc += (*x as f64 - avg).powi(2);
-    }
-    acc /= len;
-    return acc.sqrt();
+    (sum2 as f64 / len as f64 - (sum1*sum1) as f64 /(len*len) as f64).sqrt()
 }
 
 #[test]

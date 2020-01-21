@@ -67,7 +67,7 @@ fn q_mavg(ws: usize, v: &Vec<i64>) -> Vec<f64> {
 }
 
 fn q_mavg_for(ws: usize, v: &Vec<i64>) -> Vec<f64> {
-    let mut res = Vec::with_capacity(v.len()-ws+1);
+    let mut res = Vec::with_capacity(v.len());
     let mut acc:i64 = 0;
     for i in 0..ws-1 {
         acc += v[i];
