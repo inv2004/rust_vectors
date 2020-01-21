@@ -23,6 +23,7 @@ _time in ms_
 \* _window-size: 1000_
 
 \*\* _fixed_
+
 ---
 KDB+ 3.6 2019.03.07 Copyright (C) 1993-2019 Kx Systems w64/ 4(16)core 16339MB
 - deltas: 3.612
