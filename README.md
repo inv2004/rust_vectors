@@ -36,28 +36,6 @@ KDB+ 3.6 2019.03.07 Copyright (C) 1993-2019 Kx Systems w64/ 4(16)core 16339MB
 - wavg: 46.407
 
 ---
-Nim Compiler Version 1.0.4 [Windows: amd64] Compiled at 2019-11-27
-- Benchmark: deltas_bench(x = 0) Time: 3.1764ms ± 47.8762us
-- Benchmark: dev_1_bench(x = 0) Time: 6.9362ms ± 111.3220us
-- Benchmark: dev_2_bench(x = 0) Time: 4.1151ms ± 51.7601us
-- Benchmark: dev_3_bench(x = 0) Time: 2.1248ms ± 23.6025us
-- Benchmark: dev_4_bench(x = 0) Time: 634.2516us ± 13.5936us
-- Benchmark: odd_mul_amend_1_bench(x = 0) Time: 5.2874ms ± 49.1023us
-- Benchmark: odd_mul_amend_2_bench(x = 0) Time: 5.7551ms ± 107.6175us
-- Benchmark: odd_mul_1_bench(x = 0) Time: 7.9304ms ± 65.6060us
-- Benchmark: odd_mul_2_bench(x = 0) Time: 9.5562ms ± 54.5145us
-- Benchmark: mavg_1_bench(x = 0) Time: 5.8697ms ± 44.3138us
-- Benchmark: mavg_2_bench(x = 0) Time: 2.5399ms ± 28.7444us
-- Benchmark: mavg_3_bench(x = 0) Time: 4.1420ms ± 57.0274us
-- Benchmark: q_mavg_bench(x = 0) Time: 2.3967ms ± 31.9291us
-- Benchmark: max_1_bench(x = 0) Time: 2.2931ns ± 6.2839ns
-- Benchmark: max_2_bench(x = 0) Time: 6.4741ms ± 53.9765us
-- Benchmark: med_1_bench(x = 0) Time: 2.0146ns ± 3.6758ns
-- Benchmark: med_2_bench(x = 0) Time: 62.5124ms ± 263.8609us
-- Benchmark: wavg_bench(x = 0) Time: 2.1326ns ± 3.7926ns
-
-
----
 rustup 1.21.1 (7832b2ebe 2019-12-20) with -d:danger option
 - test deltas::deltas_for_bench            ... bench:   3,650,765 ns/iter (+/- 413,176)
 - test deltas::deltas_iter_bench           ... bench:   3,627,175 ns/iter (+/- 312,758)
@@ -78,4 +56,26 @@ rustup 1.21.1 (7832b2ebe 2019-12-20) with -d:danger option
 - test med::med_for_bench                  ... bench:     330,475 ns/iter (+/- 24,759)
 - test wavg::wavg_for_bench                ... bench:   9,171,995 ns/iter (+/- 1,065,234)
 - test wavg::wavg_iter_bench               ... bench:  11,740,730 ns/iter (+/- 826,348)
+
+---
+Nim Compiler Version 1.0.4 [Windows: amd64] Compiled at 2019-11-27
+- Benchmark: deltas_bench(x = 0) Time: 3.1764ms ± 47.8762us
+- Benchmark: dev_1_bench(x = 0) Time: 6.9362ms ± 111.3220us
+- Benchmark: dev_2_bench(x = 0) Time: 4.1151ms ± 51.7601us
+- Benchmark: dev_3_bench(x = 0) Time: 2.1248ms ± 23.6025us
+- Benchmark: dev_4_bench(x = 0) Time: 634.2516us ± 13.5936us
+- Benchmark: odd_mul_amend_1_bench(x = 0) Time: 5.2874ms ± 49.1023us
+- Benchmark: odd_mul_amend_2_bench(x = 0) Time: 5.7551ms ± 107.6175us
+- Benchmark: odd_mul_1_bench(x = 0) Time: 7.9304ms ± 65.6060us
+- Benchmark: odd_mul_2_bench(x = 0) Time: 9.5562ms ± 54.5145us
+- Benchmark: mavg_1_bench(x = 0) Time: 5.8697ms ± 44.3138us
+- Benchmark: mavg_2_bench(x = 0) Time: 2.5399ms ± 28.7444us
+- Benchmark: mavg_3_bench(x = 0) Time: 4.1420ms ± 57.0274us
+- Benchmark: q_mavg_bench(x = 0) Time: 2.3967ms ± 31.9291us
+- Benchmark: max_1_bench(x = 0) Time: 2.2931ns ± 6.2839ns
+- Benchmark: max_2_bench(x = 0) Time: 6.4741ms ± 53.9765us
+- Benchmark: med_1_bench(x = 0) Time: 2.0146ns ± 3.6758ns
+- Benchmark: med_2_bench(x = 0) Time: 62.5124ms ± 263.8609us
+- Benchmark: wavg_bench(x = 0) Time: 2.1326ns ± 3.7926ns
+
 
