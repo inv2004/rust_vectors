@@ -6,7 +6,6 @@ authors = ["inv2004 <inv2004@gmail.com>"]
 [dependencies]
 rand = "*"
 lazy_static = "*"
-order-stat = "*"
 
 #[target.'cfg(...)']
 [build]
