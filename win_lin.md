@@ -23,7 +23,7 @@ test wavg::wavg_for_bench                ... bench:  11,924,135 ns/iter (+/- 246
 test wavg::wavg_iter_bench               ... bench:  14,368,884 ns/iter (+/- 38,400)
 ```
 
-**windows-10**
+**windows-10** **gnu**
 ```
 test deltas::deltas_for_bench            ... bench:   5,456,710 ns/iter (+/- 1,802,048)
 test deltas::deltas_iter_bench           ... bench:   5,423,970 ns/iter (+/- 196,594)
