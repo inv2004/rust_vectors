@@ -45,3 +45,26 @@ test med::med_for_bench                  ... bench:     452,720 ns/iter (+/- 12,
 test wavg::wavg_for_bench                ... bench:  10,813,640 ns/iter (+/- 223,904)
 test wavg::wavg_iter_bench               ... bench:  14,924,200 ns/iter (+/- 923,622)
 ```
+
+**windows-10** **msvc**
+```
+test deltas::deltas_for_bench            ... bench:   5,482,400 ns/iter (+/- 252,900)
+test deltas::deltas_iter_bench           ... bench:   5,483,670 ns/iter (+/- 183,250)
+test deltas::deltas_windows_bench        ... bench:   5,367,890 ns/iter (+/- 201,625)
+test dev::dev_for_bench                  ... bench:     675,552 ns/iter (+/- 15,492)
+test dev::dev_iter_bench                 ... bench:   1,845,945 ns/iter (+/- 28,242)
+test find_amend::odd_mul_amend_bench     ... bench:   5,675,850 ns/iter (+/- 1,344,441)
+test find_amend::odd_mul_amend_mut_bench ... bench:  17,007,610 ns/iter (+/- 1,343,457)
+test find_amend::odd_mul_bench           ... bench:   9,866,290 ns/iter (+/- 1,635,230)
+test mavg::mavg_for_bench                ... bench:   6,058,960 ns/iter (+/- 263,270)
+test mavg::mavg_iter_bench               ... bench:  11,000,540 ns/iter (+/- 580,803)
+test mavg::mavg_windows_bench            ... bench: 119,093,950 ns/iter (+/- 12,161,760)
+test mavg::q_mavg_bench                  ... bench:  45,490,120 ns/iter (+/- 1,179,806)
+test mavg::q_mavg_for_bench              ... bench:   5,843,465 ns/iter (+/- 1,309,475)
+test mavg::q_mavg_iter_bench             ... bench:  11,399,320 ns/iter (+/- 4,264,546)
+test max::max_for_bench                  ... bench:   6,029,225 ns/iter (+/- 1,009,656)
+test max::max_iter_bench                 ... bench:   6,957,605 ns/iter (+/- 778,069)
+test med::med_for_bench                  ... bench:     450,910 ns/iter (+/- 94,555)
+test wavg::wavg_for_bench                ... bench:  11,236,310 ns/iter (+/- 2,224,297)
+test wavg::wavg_iter_bench               ... bench:  15,123,710 ns/iter (+/- 1,919,867)
+```
