@@ -2,6 +2,7 @@
 ### Benchmarks to compare different languages on vector processing
 - Rust
 - Q (kdb)
+- Nim (danger)
 - C (maybe in the future)
 
 _time in ms_
